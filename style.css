@@ -1,0 +1,137 @@
+
+
+:root {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+    --width: 50em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: light-dark(#eee, #333);
+    color: light-dark(#333, #eee);
+}
+
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--width);
+
+    h1 {
+        color: #336699;
+        a {
+            color: inherit;
+        }
+    }
+
+    img {
+        height: 5em;
+    }
+
+}
+
+article {
+    scroll-margin-top: 2.5em;
+    margin-bottom: 1em;
+    padding: 1em 2em;
+    border: thick solid transparent;
+    border-radius: 0.5em;
+    background-color: light-dark(#ddd, #222);
+    max-width: 50em;
+
+    &:target {
+        border-color: #369;
+        background-color: light-dark(lemonchiffon, #111);
+    }
+}
+
+h1 {
+    color: #336699;
+
+    a {
+        color: inherit;
+    }
+}
+
+h2 {
+    color: #4477AA;
+}
+
+h3 {
+    color: #5588BB;
+}
+
+ul {
+    margin-left: 1em
+}
+
+nav {
+    position: sticky;
+    top: 0.5em;
+    z-index: 1000;
+    border-radius: 0.25em;
+    overflow: clip;
+    grid-area: nav;
+    width: var(--width);
+
+    menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        list-style: none;
+        background-color: #369;
+
+        a {
+            color: white;
+        }
+    }
+
+}
+
+dfn {
+    opacity: 0.7;
+    font-style: normal;
+    font-weight: bold;
+
+    &:before {
+        content: "(";
+    }
+    &:after {
+        content: ")";
+    }
+}
+
+pre {
+    background-color: light-dark(#FFF, #000);
+    color: light-dark(#036, #0f0);
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    border: thin dashed #369;
+}
+
+code {
+    background-color: light-dark(#FFF, #000);
+    color: light-dark(#036, #0f0);
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    font-family: "Courier New", Courier, monospace;
+}
+
+summary {
+    cursor: help;
+    text-decoration: underline dotted;
+}

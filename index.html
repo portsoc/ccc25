@@ -1,80 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCC Plan</title>
 
-<style>
-    :root {
-        color-scheme: light dark;
-        scroll-behavior: smooth;
-    }
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style-grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCC Plan</title>
+</head>
 
-    body {
-        display: flex;
-        justify-content: center;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: light-dark(#eee, #333);
-        color: light-dark(#333, #eee);
-    }
+<body>
 
-    article {
-        margin-bottom: 1em;
-        padding: 1em 2em;
-        border: thick solid transparent;
-        border-radius: 5px;
-        background-color: light-dark(#ddd, #222);
-        max-width: 50em;
-
-        &:target {
-            border-color: #369;
-            background-color: light-dark(lemonchiffon, #111);
-        }
-    }
-
-    h1 {
-        color: #336699;
-    }
-
-    h2 {
-        color: #4477AA;
-    }
-
-    h3 {
-        color: #5588BB;
-    }
-
-    ul {
-        margin-left: 1em
-    }
-
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 1000; /* Ensure it stays above other content */
-
-        menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding: 0;
-            list-style: none;
-            background-color: #369;
-
-            a {
-                color: white;
-            }
-        }
-
-    }
-
-
-</style>
-
-<main>
-
-    <h1>CCC-Web Plan</h1>
+    <header>
+        <h1><a href="/">CCC-Web</a> Plan</h1>
+        <img src="/logo.svg" alt="Uni of Portsmouth Logo" />
+    </header>
 
     <nav>
         <menu>
@@ -85,179 +25,189 @@
             <li><a href="#w5">Week 5</a></li>
         </menu>
     </nav>
+    <main>
 
-    <article id="w1">
-        <h2>Week 1</h2>
-        <p>By the end of this week you will be able to build basic web pages using good semantic markup, showing
-            familiarity with the necessary tools &amp; technologies (particularly the HyperText Markup Language - <dfn>HTML</dfn>) .
+        <article id="w1">
+            <h2>Week 1</h2>
+            <p>By the end of this week you will be able to build basic web pages using good semantic markup, showing familiarity with the necessary tools &amp; technologies (particularly the HyperText Markup Language - <dfn>HTML</dfn>).
 
-        <section>
-            <h3>Before the Lecture</h3>
-            <ul>
-                <li>Watch the <a href="https://portsoc.github.io/cccweb1/stages/99/">introductory scroller</a>.</li>
-                <li>Add <a
-                        href="https://ebookcentral.proquest.com/lib/portsmouth-ebooks/detail.action?docID=5135313">Lawson
-                        &amp; Sharp's HTML 5</a> to your digital bookshelf.</li>
+            <section>
+                <h3>Before the Lecture</h3>
+                <ul>
+                    <li>Watch the <a href="https://portsoc.github.io/cccweb1/stages/99/">introductory scroller</a>.</li>
+                    <li>Add <a href="https://ebookcentral.proquest.com/lib/portsmouth-ebooks/detail.action?docID=5135313">Lawson &amp; Sharp's HTML 5</a> to your digital bookshelf.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Before the Workshop</h3>
+                <ul>
+                    <li>Nothing much: it's week 1 of this sub-module so show us you can turn up!</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Lecture Topic</h3>
+                <ul>
+                    <li><a href="https://portdotacdotuk-my.sharepoint.com/:p:/g/personal/rich_boakes_port_ac_uk/EVAuOY4ULupOuBUsMlceNxQBF-OmgwyK1ST3DVz7949Gog?e=jAB3h7&nav=eyJzSWQiOjI1Nn0">Building basic web pages with semantic markup.</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Workshop Activity</h3>
+                <ul>
+                    <li>Start the <a href="/worksheets/html.html">HTML Worksheet</a> (<a href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">MS Word version</a>).</li>
+                    <li>Start the Responsive Web Design modules on <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Basic HTML and Semantic HTML</a> from FreeCodeCamp. You should work through these in your own time to gain experience.
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+
+
+        <article id="w2">
+            <h2>Week 2</h2>
+            <p>By the end of this week you will be able to use a basic style sheet to format a web page.</p>
             </ul>
-        </section>
 
-        <section>
-            <h3>Before the Workshop</h3>
-            <ul>
-                <li>Nothing much: it's week 1 of this sub-module so show us you can turn up!</li>
-            </ul>
-        </section>
+            <section>
+                <h3>Before the Lecture</h3>
+                <ul>
+                    <li>Prepare questions arising from the <a href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">HTML worksheet</a>. </li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>Lecture Topic</h3>
-            <ul>
-                <li><a
-                        href="https://portdotacdotuk-my.sharepoint.com/:p:/g/personal/rich_boakes_port_ac_uk/EVAuOY4ULupOuBUsMlceNxQBF-OmgwyK1ST3DVz7949Gog?e=jAB3h7&nav=eyJzSWQiOjI1Nn0">Building
-                        basic web pages with semantic markup.</a></li>
-            </ul>
-        </section>
+            <section>
+                <h3>Before the Workshop</h3>
+                <ul>
+                    <li>Complete all tasks in the <a href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">HTML worksheet</a>.</li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>Workshop Activity</h3>
-            <ul>
-                <li>Start the <a
-                        href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">HTML
-                        worksheet</a>.</li>
-                <li>Start the Responsive Web Design modules on <a
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Basic HTML and Semantic
-                        HTML</a> from FreeCodeCamp. You should work through these in your own time to gain experience.
-                </li>
-            </ul>
-        </section>
-    </article>
+            <section>
+                <h3>Lecture Topic</h3>
+                <ul>
+                    <li><a href="https://portdotacdotuk-my.sharepoint.com/:p:/g/personal/rich_boakes_port_ac_uk/IQDIjCpqb7cqSLoLv31aXbOPAYNsUtXaouxN-BBXPwZVHp8?e=4Z6Vyb">Adding Style with CSS</a></li>
+                    <li><a href="https://portsoc.github.io/ccc-css-example/">Example</a> (<a href="https://github.com/portsoc/ccc-css-example">Source</a>)</li>
+                    <li>Old site examples:
+                        <a href="https://web.archive.org/web/19970613203932/http://home.netscape.com/index.html">Netscape</a>,
+                        <a href="view-source:https://web.archive.org/web/19981205060735/http://microsoft.com/">Microsoft</a>,
+                        <a href="http://web.archive.org/web/19970613203550/http://www.bbc.co.uk/worldservice/">BBC World Service</a>
+                    </li>
+                </ul>
+            </section>
 
-    <article id="w2">
-        <h2>Week 2</h2>
-        <p>By the end of this week you will be able to use a basic style sheet to format a web page.
-
-        <section>
-            <h3>Before the Lecture</h3>
-            <p>Prepare questions arising from the <a
-                    href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">HTML
-                    worksheet</a>.
-        </section>
-
-        <section>
-            <h3>Before the Workshop</h3>
-            <ul>
-                <li>Complete all tasks in the <a
-                        href="https://portdotacdotuk-my.sharepoint.com/:w:/g/personal/rich_boakes_port_ac_uk/EemFmLMfmGlMv9s-RF8uh_sBCMqZFHd56x9FQCXIjTTgwg?e=dm1UQ1">HTML
-                        worksheet</a>.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Lecture Topic</h3>
-            <ul>
-                <li>Adding styles to web pages.</li>
-                <li>Extra slides</li>
-                <li>Example Source (with added bits)</li>
-                <li>Live example</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Workshop Activity</h3>
-            <p>Demonstrate what you did for Tasks 4+5 of the HTML worksheet.
-            <p>Starting the Style worksheet.
-        </section>
-
-    </article>
-
-    <article id="w3">
-        <h2>Week 3</h2>
-        <p>By the end of this week you will be able to use Images in HTML pages, making them accessible and coping with different screen resolutions.
-
-        <section>
-            <h3>Before the Lecture</h3>
-            <p>Try using images in your pages.
-        </section>
-
-        <section>
-            <h3>Lecture Topic</h3>
-            <p>Using images properly on the web.
-        </section>
-
-        <section>
-            <h3>Before the Workshop</h3>
-            <p>Complete tasks in the Style worksheet.
-            <p>Experiment with HTML &amp; CSS, and make notes on any questions you want to ask in the work session.
-        </section>
-
-        <section>
-            <h3>Workshop Activity</h3>
-            <ul>
-                <li>Demonstrate what you did for Task 4 of the Style worksheet.</li>
-                <li>Start the Images worksheet.</li>
-            </ul>
-        </section>
-
-    </article>
-
-    <article id="w4">
-        <h2>Week 4</h2>
-        <p>By the end of this week you will be able to use absolute and relative web addresses for links.
-
-        <section>
-            <h3>Before the Lecture</h3>
-            <p>N/A
-        </section>
-
-        <section>
-            <h3>Lecture Topic</h3>
-            <ul>
-                <li>URLs</li>
-                <li>The URLDemo (Live)</li>
-                <li>The URLDemo (Source)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Before the Workshop</h3>
-            <p>Complete the Images worksheet.
-        </section>
-
-        <section>
-            <h3>Workshop Activity</h3>
-            <ul>
-                <li>Demonstrate that you can create HTML with valid images.</li>
-                <li>Start the Addressing worksheet.</li>
-            </ul>
-        </section>
-
-    </article>
-
-    <article id="w5">
-        <h2>Week 5</h2>
-        <p>By the end of this week you will be able to  manage and backup your code with git and GitHub.
-
-        <section>
-            <h3>Before the Lecture</h3>
-            <p>Prepare your brain for a nice relaxing session and find something to make notes with.
-        </section>
-
-        <section>
-            <h3>Lecture Topic</h3>
-            <p>Cover all the basics of git and GitHub - everything that you'll need to know to be effective when managing coursework files.
-        </section>
-
-        <section>
-            <h3>Before the Workshop</h3>
-            <p>Do nothing - this week is a bonus - git and GitHub are not on the exam - just bring your brain and something to make notes.
-        </section>
-
-        <section>
-            <h3>Workshop Activity</h3>
-            <p>Q&amp;A on everything so far, and learning to use git with your own code.
-            
-        </section>
-
-    </article>
+            <section>
+                <h3>Workshop Activity</h3>
+                <ul>
+                    <li>Demonstrate what you did for Tasks 4+5 of the HTML worksheet. </li>
+                    <li>Start the <a href="worksheets/style.html">Style worksheet</a>.</li>
+                </ul>
+            </section>
+        </article>
 
 
-</main>
+
+        <article id="w3">
+            <h2>Week 3</h2>
+            <p>By the end of this week you will be able to use Images in HTML pages, making them accessible and coping with
+                different screen resolutions.
+
+            <section>
+                <h3>Before the Lecture</h3>
+                <ul>
+                    <li>Try using images in your pages.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Before the Workshop</h3>
+                <ul>
+                    <li>Complete tasks in the Style worksheet.</li>
+                    <li>Experiment with HTML &amp; CSS, and make notes on any questions you want to ask in the work session.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Lecture Topic</h3>
+                <ul>
+                    <li>Using images properly on the web.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Workshop Activity</h3>
+                <ul>
+                    <li>Demonstrate what you did for Task 4 of the Style worksheet.</li>
+                    <li>Start the Images worksheet.</li>
+                </ul>
+            </section>
+
+        </article>
+
+
+
+        <article id="w4">
+            <h2>Week 4</h2>
+            <p>By the end of this week you will be able to use absolute and relative web addresses for links.
+
+            <section>
+                <h3>Before the Lecture</h3>
+                <p>N/A
+            </section>
+
+            <section>
+                <h3>Before the Workshop</h3>
+                <p>Complete the Images worksheet.
+            </section>
+
+            <section>
+                <h3>Lecture Topic</h3>
+                <ul>
+                    <li>URLs</li>
+                    <li>The URLDemo (Live)</li>
+                    <li>The URLDemo (Source)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Workshop Activity</h3>
+                <ul>
+                    <li>Demonstrate that you can create HTML with valid images.</li>
+                    <li>Start the Addressing worksheet.</li>
+                </ul>
+            </section>
+
+        </article>
+
+
+
+        <article id="w5">
+            <h2>Week 5</h2>
+            <p>By the end of this week you will be able to manage and backup your code with git and GitHub.
+
+            <section>
+                <h3>Before the Lecture</h3>
+                <p>Prepare your brain for a nice relaxing session and find something to make notes with.
+            </section>
+
+            <section>
+                <h3>Before the Workshop</h3>
+                <p>Do nothing - this week is a bonus - git and GitHub are not on the exam - just bring your brain and
+                    something to make notes.
+            </section>
+
+            <section>
+                <h3>Lecture Topic</h3>
+                <p>Cover all the basics of git and GitHub - everything that you'll need to know to be effective when
+                    managing coursework files.
+            </section>
+
+            <section>
+                <h3>Workshop Activity</h3>
+                <p>Q&amp;A on everything so far, and learning to use git with your own code.
+            </section>
+
+        </article>
+    </main>
+</body>

@@ -1,0 +1,42 @@
+@media (width > 80em)  {
+
+    main {
+        width: 100vw;
+
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-gap: 0.5vmin;
+        padding: 1vmin;
+        grid-template-areas: "head head head head head"
+                                "nav  nav  nav  nav  nav";
+
+        article {
+
+            display: contents;
+
+            &>* {
+                border: solid thin light-dark(#ccc, #444);
+                border-radius: 1vmin;
+                padding: 1vmin 2vmin;
+                margin: 0;
+            }
+
+            &>*:hover {
+                border-color: #369;
+                background-color: light-dark(lemonchiffon, #111);
+            }
+
+
+            ul {
+                padding: 0;
+            }
+        }
+
+    }
+
+    :target>* {
+        border-color: #369;
+        background-color: light-dark(lemonchiffon, #111);
+    }
+
+} 
