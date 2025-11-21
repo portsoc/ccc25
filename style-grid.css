@@ -1,4 +1,4 @@
-@media (width > 80em)  {
+@media (width > 100em) and (orientation: landscape) {
 
     main {
         width: 100vw;
