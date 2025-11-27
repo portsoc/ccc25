@@ -36,7 +36,7 @@
 
     :target>* {
         border-color: #369;
-        background-color: light-dark(#7F7, #111);
+        background-color: light-dark(lemonchiffon, #111);
     }
 
 } 
