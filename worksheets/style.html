@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Worksheet</title>
+    <script type="module" src="../copyablepre/copyablepre.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
             <ol>
                 <li>Create a folder for this week's work: call it <code>style</code>. Any files you create should be placed here.</li>
                 <li>Create a file called <code>example.html</code> that contains the following content:
-                    <pre>
+                    <copyable-pre>
 &lt;!DOCTYPE html&gt; 
 &lt;meta charset=UTF-8&gt; 
 &lt;title&gt;Hello CSS World&lt;/title&gt; 
@@ -48,7 +49,7 @@
         &lt;p id=three class=special&gt;This is my second Hello World paragraph.&lt;/p&gt; 
     &lt;/section&gt;
 &lt;/article&gt;
-</pre>
+</copyable-pre>
                 </li>
                 <li>Load the file to check the default rendering.</li>
                 <li>If any of this was new, record it in your discovery log.</li>
@@ -69,7 +70,7 @@
                 <li>Make a copy of <code>example.html</code> and call it <code>embedded.html</code></li>
                 <li>Open <code>embedded.html</code> for editing.</li>
                 <li>Add the following text immediately below the <code>&lt;title&gt;</code> element:
-                    <pre>
+                    <copyable-pre>
 &lt;style&gt;
     section {
         color: red;
@@ -78,7 +79,7 @@
         font-family: sans-serif;
         font-size: 130%;
     }
-&lt;/style&gt;</pre>
+&lt;/style&gt;</copyable-pre>
                 </li>
 
                 <li>Save the file.</li>
@@ -96,20 +97,21 @@
             <ol>
                 <li>Create a file called <code>mystyle.css</code>.</li>
                 <li>Add the following text to the new file:
-                    <pre>
+                    <copyable-pre>
 section {
     color: green;
 }
 p {
     font-family: sans-serif;
     font-size: 130%;
-}</pre>
+}</copyable-pre>
                 </li>
 
                 <li>Remember this is not an embedded stylesheet so we <strong>do not</strong> include the HTML <code>&lt;style&gt;</code> tags in this file.</li>
                 <li>Copy <code>example.html</code> as <code>linked.html</code>.</li>
                 <li>Open <code>linked.html</code> and link the stylesheet by adding the following immediately below the <code>&lt;title&gt;</code> element:
-                    <pre><code>&lt;link rel="stylesheet" title="My Style" href="mystyle.css"&gt;</code></pre>
+                    <copyable-pre>
+&lt;link rel="stylesheet" title="My Style" href="mystyle.css"&gt;</copyable-pre>
                 </li>
                 <li>Save the file.</li>
                 <li>Predict how it should look, and then load it in your browser to check.</li>
@@ -125,30 +127,30 @@ p {
             <ol>
                 <li>Try <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">class selectors</a> — for example&hellip;
                     <p>In <code>mystyle.css</code> add:
-                    <pre>
+                    <copyable-pre>
 .discounted_bargain {
   color: red;
 }
 
 .damaged_stock {
   background: yellow;
-}</pre>
+}</copyable-pre>
                     <p>&hellip;and in <code>linked.html</code> add:
-                    <pre>
+                    <copyable-pre>
 &lt;p class="damaged_stock discounted_bargain"&gt;
   Child's Tricycle
 &lt;/p&gt;
-</pre>
+</copyable-pre>
                 </li>
                 <li>Try <a href="https://developer.mozilla.org/en/docs/Web/CSS/ID_selectors">id selectors</a> — for example&hellip;
                     <p>In <code>mystyle.css</code> add:
-                    <pre>
+                    <copyable-pre>
 #special_section {
   background: yellow;
-}</pre>
+}</copyable-pre>
                     <p>&hellip;and in <code>linked.html</code> add:
-                    <pre>
-&lt;p id="special_section" &gt;Child's Tricycle&lt;/p&gt;</pre>
+                    <copyable-pre>
+&lt;p id="special_section" &gt;Child's Tricycle&lt;/p&gt;</copyable-pre>
                 </li>
             </ol>
             <p>Again, if any of this was new, record it in your discovery log.</p>

@@ -1,0 +1,17 @@
+:host {
+    position: relative;
+    border: grey solid thin;
+    border-radius: 0.25em;
+    display: block;
+    padding: 0.5em 1em;
+}
+
+button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+pre {
+    margin: 0;
+}
