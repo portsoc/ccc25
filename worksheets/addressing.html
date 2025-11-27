@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addressing Worksheet</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1><a href="../index.html">CCC-Web</a> Worksheet</h1>
+            <img src="../logo.svg" alt="Uni of Portsmouth Logo">
+        </header>
+
+        <article>
+            <h2>Addressing</h2>
+            <p>We've discussed URLs and hyperlinks; how to form a URL and how to use the anchor tag to place links in HTML. Here we will build a simple HTML5 page and add some links to it.</p>
+        </article>
+
+        <article>
+            <h2>Task 0: Preparation</h2>
+            <ol>
+                <li>Create a folder for this week’s work: call it <code>links</code>. Place any files you create in it.</li>
+                <li>Create a file called <code>index.html</code> that contains the following content:
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;meta charset=UTF-8&gt;
+&lt;title&gt;Hello Links World&lt;/title&gt;
+&lt;article&gt;
+ &lt;section&gt;
+   &lt;h1&gt;My Favourite Websites:&lt;/h1&gt;
+   &lt;ul id=extlinks&gt;
+     &lt;li&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+   &lt;h1&gt;Other pages on my site&lt;/h1&gt;
+ &lt;/section&gt;
+&lt;/article&gt;</pre>
+
+                </li>
+                <li>Load the file to check the default rendering.</li>
+                <li>If any of this was new, record it in your discovery log.</li>
+            </ol>
+        </article>
+
+
+        <article>
+            <h2>Task 1: A list of your favourite links</h2>
+            <p>In this task you will add links to your favourite websites to the list in the first section of the page.</p>
+            In <code>index.html</code> notice the <code>extlinks</code> element. The <code>ul</code> tags indicate an unordered list, which is rendered as bullets by the browser. Each item in the list is surrounded by <code>li</code> <dfn>list item</dfn> tags thus: <code>&lt;li&gt;Example list item.&lt;/li&gt;</code>.
+
+            <ol>
+                <li>Find four websites that you like and make a note of their URLs in your discovery log.</li>
+                <li>Add three more pairs of <code>li</code> tags to the <code>ul</code> in <code>index.html</code>, each on a new line. You should now have four empty list items.</li>
+                <li>Between each pair of <code>li</code> tags, add an <code>a</code> tag to link to your chosen websites. Each link should use the syntax: <code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code> where <code>URL</code> is the address of the website you want to link to, and <code>Link Text</code> is the text that will appear as the link in the browser.</li>
+                <li>Check that the links work.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Task 2: Relative links</h2>
+            <ul>
+                <li>Create three new html files inside your links folder. They should be called <code>about.html</code>, <code>studies.html</code> and <code>music.html</code>. Keep your filenames lower case (this is good practice for all web resources).</li>
+                <li>Give each page some relevant content in HTML. If you need a basic page template, use the one at the beginning of this practical, or use one from a previous week.</li>
+                <li>Save all of your pages and make sure they are in the <code>links</code> folder.</li>
+                <li>Open your <code>index.html</code> file. In the second <code>section</code>, make a new <code>ul</code> element with three <code>li</code> items inside it.</li>
+                <li>For each item, create a new <em>relative</em> link using an <a> tag to link to each of your new pages. Remember, as the pages are all located in the folder, you can just use the filename as the <code>href</code>, for example <code>&lt;a href="about.html"&gt;</code>. </li>
+                <li>Load <code>index.html</code> in your browser and check that your links work.</li>
+                <li>Add a link on each of your new pages to your homepage.</li>
+            </ul>
+            <p>NB: When using a server, you can link to <code>index.html</code> with <code>&lt;a href="/"&gt;</code> but this link won't work if you're opening files from a local filesystem.</p>
+        </article>
+
+
+        <article>
+            <h2>Task 3: Targets and fragments</h2>
+            <ol>
+                <li>For each external link from Task&nbsp;1, add a <code>target</code> attribute so the site opens in a new window (look up the exact syntax if needed).</li>
+                <li>At the bottom of <code>index.html</code>, add a fragment link back to your list of external websites, e.g. <code>&lt;a href="#extlinks"&gt;Back to favourite websites&lt;/a&gt;</code>, then test by scrolling away from the list and clicking the link.</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Task 4: Read, Discover, Experiment, Learn</h2>
+            <p>You now have a basic understanding of links. Try the following for an extra challenge.</p>
+            <ol>
+            <li>Move <code>about.html</code>, <code>studies.html</code>, and <code>music.html</code> into a subfolder called <code>pages</code>, then update the relative links in <code>index.html</code>.</li>
+            <li>On <code>studies.html</code>, link to work from previous weeks.</li>
+            <li>Create a site-wide <code>&lt;nav&gt;</code> containing a <code>&lt;ul&gt;</code>; use CSS to display the list horizontally.</li>
+            <li>Ensure all filenames (and matching links) use lowercase.</li>
+            <li>Record everything new in your discovery log.</li>
+            </ol>
+        </article>
+
+
+
+
+    </main>
+</body>
+
+</html>

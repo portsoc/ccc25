@@ -1,5 +1,9 @@
 @media (width > 100em) and (orientation: landscape) {
 
+    body {
+        font-size: 1.4vmin;
+    }
+
     main {
         width: 100vw;
 
@@ -19,11 +23,16 @@
                 border-radius: 1vmin;
                 padding: 1vmin 2vmin;
                 margin: 0;
+
+                h3 {
+                    margin: 0;
+                }
+
             }
 
             &>*:hover {
                 border-color: #369;
-                background-color: light-dark(lemonchiffon, #111);
+                background-color: light-dark(#7F7, #000);
             }
 
 
@@ -36,7 +45,7 @@
 
     :target>* {
         border-color: #369;
-        background-color: light-dark(lemonchiffon, #111);
+        background-color: light-dark(lemonchiffon, #222);
     }
 
 } 
