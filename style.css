@@ -29,7 +29,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--bg);
-    color: var(--text)
+    color: var(--text);
 }
 
 header {
@@ -39,13 +39,6 @@ header {
     align-items: center;
     width: 100%;
     max-width: var(--width);
-
-    h1 {
-        color: var(--col1);
-        a {
-            color: inherit;
-        }
-    }
 
     img {
         height: calc(var(--space) * 5);
@@ -140,6 +133,7 @@ pre, copyable-pre {
     white-space: pre-wrap;
     word-wrap: break-word; 
     border: thin dashed var(--col1);
+    display: block;
 }
 
 code {
