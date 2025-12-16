@@ -124,6 +124,10 @@ dfn {
     }
 }
 
+dt {
+    font-weight: bold;
+}
+
 pre, copyable-pre {
     background-color: var(--pre-bg);
     color: var(--pre-text);

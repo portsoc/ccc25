@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revision Control Worksheet</title>
-    <script type="module" src="../copyablepre/copyablepre.js"></script>
+    <script type="module" src="../js/copyablepre/copyablepre.js"></script>
+    <script src="./slideshow.js"></script>
 </head>
 
 <body>
@@ -20,13 +21,16 @@
         <article>
             <details>
                 <summary>Revision Control</summary>
-                <p>Revision control is widely used for managing changes to source code over time. It allows multiple people to collaborate on a project, track revisions, and revert to previous states if needed. Here's an introduction to it, and to two popular systems: Git and GitHub.</p>
+                <section>
+                    <aside>
+                        <p>Revision control is widely used for managing changes to source code over time. It allows multiple people to collaborate on a project, track revisions, and revert to previous states if needed.  Here's an introduction to it, and to two popular systems: Git and GitHub.</p>
+                    </aside>
 
-                <figure>
-                    <img src="draft.png" alt="Example of revision control through copying a file and changing the filename.">
-                    <figcaption>How <strong>not</strong> to do it! An example of revision control through copying a file and changing the filename.</figcaption>
-                </figure>
-
+                    <figure>
+                        <img src="draft.png" alt="Example of revision control through copying a file and changing the filename.">
+                        <figcaption>How <strong>not</strong> to do it! An example of revision control through copying a file and changing the filename.</figcaption>
+                    </figure>
+                    </section>
                 <section>
 
                     <h3>What happens in software development?</h3>
@@ -46,8 +50,10 @@
                         <li>🍝 Big feature not finished yet. Code threads are everywhere like spaghetti. You can't add a new feature because nothing is working right now.</li>
                         <li>🤯 Oh dear</li>
                     </ul>
-                    <p>Software development is an iterative process. You write code, test it, find bugs, fix them, and add new features. This cycle continues as the software evolves over time.</p>
-                    <p>Without revision control, managing these changes can become chaotic. You might end up with multiple versions of files, making it hard to track what changes were made and when. This is where revision control systems come in handy.</p>
+                    <aside>
+                        <p>Software development is an iterative process. You write code, test it, find bugs, fix them, and add new features. This cycle continues as the software evolves over time.</p>
+                        <p>Without revision control, managing these changes can become chaotic. You might end up with multiple versions of files, making it hard to track what changes were made and when. This is where revision control systems come in handy.</p>
+                    </aside>
                 </section>
 
                 <section>
@@ -75,16 +81,16 @@
 
                 <section>
                     <h3>Git Glossary</h3>
-                    <ul>
-                        <li><dfn>Repository (Repo):</dfn> A folder where Git tracks your project.</li>
-                        <li><dfn>Working Tree:</dfn> All the files and folders that Git is tracking, plus any new files you add.</li>
-                        <li><dfn>Branch:</dfn> An independent line of development within your project.</li>
-                        <li><dfn>Stage:</dfn> Tell Git which changes you want to include in the next snapshot.</li>
-                        <li><dfn>Commit:</dfn> Make a snapshot of your project at a specific point in time.</li>
-                        <li><dfn>Clone:</dfn> A copy of a repository from a remote server to your local machine.</li>
-                        <li><dfn>Push:</dfn> Uploading your local commits to a remote repository.</li>
-                        <li><dfn>Pull:</dfn> Downloading changes from a remote repository to your local machine.</li>
-                    </ul>
+                    <dl>
+                        <dt>Repository (Repo):</dt><dd> A folder where Git tracks your project.</dd>
+                        <dt>Working Tree:</dt><dd> All the files and folders that Git is tracking, plus any new files you add.</dd>
+                        <dt>Branch:</dt><dd> An independent line of development within your project.</dd>
+                        <dt>Stage:</dt><dd> Tell Git which changes you want to include in the next snapshot.</dd>
+                        <dt>Commit:</dt><dd> Make a snapshot of your project at a specific point in time.</dd>
+                        <dt>Clone:</dt><dd> A copy of a repository from a remote server to your local machine.</dd>
+                        <dt>Push:</dt><dd> Uploading your local commits to a remote repository.</dd>
+                        <dt>Pull:</dt><dd> Downloading changes from a remote repository to your local machine.</dd>
+                    </dl>
                 </section>
 
 
@@ -109,11 +115,10 @@
                 <li>Install git on your machine.</li>
                 <li>Configure your git username, email and the default repo name.
                     <copyable-pre contenteditable>
-                        git config --global user.name "Your Name"
-                        git config --global user.email "you@example.com"
-                        git config --global init.defaultBranch main
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main
                     </copyable-pre>
-
 
                 </li>
 
@@ -122,10 +127,21 @@
         </article>
 
         <article>
-            <h2>Task 1: Make a website and use git to manage it</h2>
+            <h2>Task 1: Install <code>git</code></h2>
+            <ol>
+                <li>Go to <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> and download the appropriate version of git for your operating system (Windows, macOS, or Linux).</li>
+                <li>Run the installer and follow the on-screen instructions to complete the installation. You can generally accept the default settings.</li>
+                <li>After installation, open your terminal (Command Prompt on Windows, Terminal on macOS/Linux) and type:
+                    <copyable-pre>git --version</copyable-pre>
+                    This command should display the installed version of git, confirming that the installation was successful.
+                </li>
+        </article>
+
+        <article>
+            <h2>Task 2: Make a website and use <code>git</code> to manage it</h2>
 
             <ol>
-                <li>To create a project folder, on windows open Command Prompt, on Mac or Linux open Terminal.</li>
+                <li>To create a project folder, on Windows open Command Prompt (on Mac or Linux open Terminal).</li>
                 <li>Navigate to the location where <em>you</em> want to create your project folder. For example, to go to your Documents folder, you would type:
                     <copyable-pre>cd Documents</copyable-pre>
                 </li>
@@ -137,10 +153,10 @@
                 <li> Change directory to the new project folder by typing:
                     <copyable-pre>cd example</copyable-pre>
                 </li>
-                <li>Initialise git in that folder by typing:
+                <li>Initialise <code>git</code> in that folder by typing:
                     <copyable-pre>git init</copyable-pre>
                 </li>
-                <li>Create a home page by.... you know how to do this :-)
+                <li>Create a home page by&hellip; you already know how to do this! :-)
                 </li>
                 <li>Stage the changes by typing:
                     <copyable-pre>git add index.html</copyable-pre>
@@ -152,7 +168,7 @@
         </article>
 
         <article>
-            <h2>Task 2: Make changes and track them with git</h2>
+            <h2>Task 3: Make changes and track them with git</h2>
 
             <ol>
                 <li>Edit your index.html file to add a new section.</li>
@@ -169,31 +185,102 @@
         </article>
 
         <article>
-            <h2>Add a remote GitHub branch</h2>
+            <h2>Task 4: Add a remote GitHub Repo</h2>
             <ol>
-                <li>If you have not done so previously, register for a GitHub account.  You can use your uni credentials for this, or you may wish to use a private email address so you can keep your account permanently.</li>
+                <li>For this next bit, keep in mind that potential employers may look at your GitHub profile so choose a sensible GitHub username.</li>
+                <li>If you have not done so previously, register for a <a href="https://github.com/join">GitHub</a> account.</li>
                 <li>Login to GitHub.</li>
 
-                <li>Create a new repository on GitHub without any files by visiting 
-                    <copyable-pre>
-                        https://github.com/new
-                    </copyable-pre>
+                <li>Create a new repository on GitHub without any files by visiting
+                    <copyable-pre>https://github.com/new</copyable-pre>
                 </li>
-            <li>Back in your terminal, link the local repo to GitHub:
-                <copyable-pre>git remote add origin https://github.com/USERNAME/REPO.git</copyable-pre>
-            </li>
-            <li>Push your current branch (for example, main) to the remote:
-                <copyable-pre>git push -u origin main</copyable-pre>
-            </li>
-            <li>Create a feature branch locally:
-                <copyable-pre>git checkout -b feature/new-section</copyable-pre>
-            </li>
-            <li>Push the branch to GitHub so others can see it:
-                <copyable-pre>git push -u origin feature/new-section</copyable-pre>
-            </li>
+                <li>Back in your terminal, link the local repo to GitHub - substituting your user name and the repository name you just created:
+                    <copyable-pre>git remote add origin https://github.com/USERNAME/REPONAME.git</copyable-pre>
+                </li>
+                <li>Push your current branch (for example, main) to the remote:
+                    <copyable-pre>git push -u origin main</copyable-pre>
+                </li>
             </ol>
         </article>
 
+
+        <article>
+            <h2>Task 5: Make changes and push them to GitHub</h2>
+
+            <ol>
+                <li>Edit your index.html file to add another new section.</li>
+                <li>Stage the changes by typing:
+                    <copyable-pre>git add index.html</copyable-pre>
+                </li>
+                <li>Commit the changes with a message by typing:
+                    <copyable-pre>git commit -m "added another new section"</copyable-pre>
+                </li>
+                <li>Push the changes to GitHub by typing:
+                    <copyable-pre>git push</copyable-pre>
+                </li>
+                <li>Go to your GitHub repository page and refresh it to see the changes reflected there.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Task 6: Pull changes from GitHub</h2>
+
+            <ol>
+                <li>Make a change directly on GitHub by editing the index.html file in your repository and committing the change.</li>
+                <li>Back in your terminal, pull the changes from GitHub by typing:
+                    <copyable-pre>git pull</copyable-pre>
+                </li>
+                <li>Open your local index.html file to see the changes that were made on GitHub.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Task 7: Create and work on a new branch</h2>
+            <ol>
+
+                <li>Create a feature branch locally:
+                    <copyable-pre>git checkout -b feature/new-section</copyable-pre>
+                </li>
+                <li>Edit your index.html file to add a new section for the feature you are working on.</li>
+                <li>Stage the changes by typing:
+                    <copyable-pre>git add index.html</copyable-pre>
+                <li>Push the branch to GitHub so others can see it:
+                    <copyable-pre>git push -u origin feature/new-section</copyable-pre>
+                </li>
+        </article>
+
+        <article>
+            <h2>Task 8: Merge the feature branch back into main</h2>
+            <ol>
+                <li>Switch back to the main branch:
+                    <copyable-pre>git checkout main</copyable-pre>
+                </li>
+                <li>Merge the feature branch into main:
+                    <copyable-pre>git merge feature/new-section</copyable-pre>
+                </li>
+                <li>Push the updated main branch to GitHub:
+                    <copyable-pre>git push</copyable-pre>
+                </li>
+                <li>Optionally, delete the feature branch both locally and on GitHub:
+                    <copyable-pre>git branch -d feature/new-section
+        </article>
+
+
+        <article>
+            <h2>Summary</h2>
+            <p>In this worksheet, you have learned the basics of using git for version control and how to collaborate using GitHub. You have created a local repository, made changes to your project, committed those changes, and pushed them to a remote repository on GitHub. You have also learned how to pull changes made on GitHub back to your local machine. These skills are essential for effective software development and collaboration in modern programming environments.</p>
+        </article>
+
+        <article>
+            <h2>Further Learning</h2>
+            <p>To learn more about git and GitHub, consider exploring the following resources:</p>
+            <ul>
+                <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener">Official Git Documentation</a></li>
+                <li><a href="https://guides.github.com/introduction/git-handbook/" target="_blank" rel="noopener">GitHub Git Handbook</a></li>
+                <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">Learn Git Branching</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener">Atlassian Git Tutorials</a></li>
+            </ul>
+        </article>
 
     </main>
 </body>
